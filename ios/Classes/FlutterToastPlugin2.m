@@ -1,6 +1,6 @@
 #import "FlutterToastPlugin.h"
 
-@implementation FlutterToastPlugin
+@implementation FlutterToastPlugin : NSObject
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   FlutterMethodChannel* channel = [FlutterMethodChannel
       methodChannelWithName:@"FlutterToast"
