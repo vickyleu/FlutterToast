@@ -48,7 +48,7 @@ static NSString *const CHANNEL_NAME = @"PonnamKarthik/fluttertoast";
         NSNumber *size = call.arguments[@"size"];
         NSNumber *fontSize = call.arguments[@"fontSize"];
 
-        CGFloat cgf = [fontSize doubleValue];
+        CGFloat cgf =  fontSize==nil?10.0:[fontSize doubleValue];
         int time = 1;
         @try {
             time = [durationTime intValue];

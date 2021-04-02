@@ -57,7 +57,7 @@ class FlutterToast {
       'gravity': gravityToast,
       'bgcolor': backgroundColor != null ? backgroundColor.value : null,
       'textcolor': textColor != null ? textColor.value : null,
-      'fontSize': fontSize,
+      'fontSize': fontSize??10.0,
       'webShowClose': webShowClose,
       'webBgColor': webBgColor,
       'webPosition': webPosition
